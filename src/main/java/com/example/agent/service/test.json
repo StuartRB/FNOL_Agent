@@ -1,0 +1,73 @@
+{
+  "lossType": "LB01",
+  "dateOfLoss": "2026-03-15T14:00:00Z",
+  "insuredVehicle": {
+    "make": "Ford",
+    "model": "Escort",
+    "year": "2012",
+    "colour": "",
+    "owner": {
+      "firstName": "Alan",
+      "lastName": "Bigg",
+      "roles": [
+        "INSRD"
+      ],
+      "phoneNumber": "999-0000-2222",
+      "emailAddress": "alan@bigg.org",
+      "injuries": []
+    },
+    "driver": {
+      "firstName": "Alan",
+      "lastName": "Bigg",
+      "roles": [
+        "DRVR"
+      ],
+      "phoneNumber": "999-0000-2222",
+      "emailAddress": "alan@bigg.org",
+      "injuries": []
+    },
+    "passengers": [
+      {
+        "firstName": "Hairy",
+        "lastName": "Mary",
+        "roles": [
+          "PASS"
+        ],
+        "phoneNumber": "999-0000-2222",
+        "emailAddress": "alan@bigg.org",
+        "injuries": [
+          {
+            "bodyPart": "Head",
+            "injuryType": "Cut"
+          }
+        ]
+      }
+    ]
+  },
+  "insuredProperty": {
+    "propertyType": "",
+    "location": {
+      "street": "",
+      "city": "",
+      "zip": "",
+      "state": ""
+    }
+  },
+  "otherInvolvedVehicles": [],
+  "lossLocation": {
+    "street": "",
+    "city": "",
+    "zip": "",
+    "state": ""
+  },
+  "reporter": {
+    "firstName": "Alan",
+    "lastName": "Bigg",
+    "roles": [
+      "INSRD"
+    ],
+    "phoneNumber": "999-0000-2222",
+    "emailAddress": "alan@bigg.org",
+    "injuries": []
+  }
+}
