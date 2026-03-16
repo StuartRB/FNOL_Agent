@@ -8,6 +8,7 @@
 
 ### To run
 ```
+local Mongo docker running
 ./gradlew bootRun
 cd claim-chat-ui && npm run dev
 ```
