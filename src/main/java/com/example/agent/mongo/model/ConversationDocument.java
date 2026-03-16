@@ -1,5 +1,6 @@
 package com.example.agent.mongo.model;
 
+import com.example.agent.tools.model.ClaimDocument;
 import lombok.Builder;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
@@ -19,4 +20,5 @@ public class ConversationDocument {
     public Map<String, Object> getExtractedContext() {
         return extractedContext == null ? new HashMap<>() : extractedContext;
     }
+    private ClaimDocument claimDocument;
 }

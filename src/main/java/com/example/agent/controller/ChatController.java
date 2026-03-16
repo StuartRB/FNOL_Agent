@@ -14,7 +14,7 @@ public class ChatController {
 
     private final ChatService chatService;
 
-    @PostMapping("/chat")
+    @PostMapping("/api/chat")
     public ChatResponse chat(@RequestBody ChatRequest request){
         return chatService.chat(request);
     }

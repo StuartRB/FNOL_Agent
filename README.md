@@ -5,3 +5,9 @@
 * chat agent to manage the conversation
 * mongo store
 * tooling
+
+### To run
+```
+./gradlew bootRun
+cd claim-chat-ui && npm run dev
+```

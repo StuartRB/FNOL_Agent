@@ -19,4 +19,5 @@ public class ClaimDocument {
     private List<Vehicle> otherInvolvedVehicles;
     private Location lossLocation;
     private Person reporter;
+    private List<Person> otherInvolvedParticipants;
 }

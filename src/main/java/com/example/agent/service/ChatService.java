@@ -36,13 +36,15 @@ public class ChatService {
                 .tools(claimTools)
                 .build();
 
-        var response = chatAgent.chat(request.getMessage(), conversationDocument.getExtractedContext());
+        var response = chatAgent.chat(request.getMessage(),
+                conversationDocument.getExtractedContext(),
+                request.getConversationId());
         return new ChatResponse(response);
     }
 
     private ConversationDocument getConversationDocument(String conversationId) {
         var document = conversationRepository.findById(conversationId);
-        if(document.isEmpty()){
+        if (document.isEmpty()) {
             var conversationDocument = ConversationDocument.builder()
                     .conversationId(conversationId)
                     .build();
