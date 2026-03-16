@@ -8,6 +8,7 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 public class Vehicle {
+    private String assetId;
     private String make;
     private String model;
     private String year;

@@ -39,6 +39,9 @@ public interface ChatAgent {
           
           The conversationId for the current customer conversation is {{conversation_id}}
           
+          As a helper, once the policy number is known, you can use the policy information via a tool to hint to the user
+          e.g. "was it your Gray 2024 Mercedes GLB that was involved?"
+          
             """)
     @UserMessage("""
             The user message is: {{message}}

@@ -10,6 +10,8 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 public class ClaimDocument {
+    @Description(value = "the status of the claim: NEW, OPEN or CLOSED")
+    private String claimStatus;
     private String policyNumber;
     private LossType lossType;
     @Description("loss time stamp in UTC ISO8601 format")
@@ -20,4 +22,10 @@ public class ClaimDocument {
     private Location lossLocation;
     private Person reporter;
     private List<Person> otherInvolvedParticipants;
+    private String policeReportNumber;
+    private String policeDepartment;
+    private String otherRelevantInformation;
+    private String lossDescription;
+    private boolean vehicleMatchedOnPolicy;
+    private boolean policyActiveAtDateOfLoss;
 }

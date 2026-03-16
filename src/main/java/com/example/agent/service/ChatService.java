@@ -6,6 +6,7 @@ import com.example.agent.model.ChatResponse;
 import com.example.agent.mongo.model.ConversationDocument;
 import com.example.agent.mongo.repository.ConversationRepository;
 import com.example.agent.tools.ClaimTools;
+import com.example.agent.tools.PolicyTools;
 import dev.langchain4j.agentic.AgenticServices;
 import dev.langchain4j.memory.ChatMemory;
 import dev.langchain4j.model.chat.ChatModel;
@@ -23,6 +24,7 @@ public class ChatService {
     private final ExtractionService extractionService;
     private final ConversationRepository conversationRepository;
     private final ClaimTools claimTools;
+    private final PolicyTools policyTools;
 
     public ChatResponse chat(ChatRequest request) {
 
@@ -33,7 +35,7 @@ public class ChatService {
         ChatAgent chatAgent = AgenticServices.agentBuilder(ChatAgent.class)
                 .chatModel(chatModel)
                 .chatMemory(chatMemory)
-                .tools(claimTools)
+                .tools(claimTools, policyTools)
                 .build();
 
         var response = chatAgent.chat(request.getMessage(),
